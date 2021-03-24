@@ -11,7 +11,7 @@ class _SplashscreenState extends State<Splashscreen> {
   @override
   Widget build(BuildContext context) {
     Future.delayed(Duration(milliseconds: 1000), () {
-      Navigator.pushNamed(context, routeName);
+      Navigator.pushNamed(context, '/main/home');
     });
     return Container();
   }

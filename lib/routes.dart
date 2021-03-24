@@ -1,5 +1,6 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter_routes/LandingPage.dart';
 import 'package:flutter_routes/splashScreen.dart';
 
 class Router {
@@ -11,7 +12,7 @@ class Router {
 
   static Handler _mainHandler = Handler(
       handlerFunc: (BuildContext context, Map<String, dynamic> params) =>
-          Splashscreen());
+          LandingPage());
 
   static void setupRouter() {
     router.define("/", handler: _splashHandler);
