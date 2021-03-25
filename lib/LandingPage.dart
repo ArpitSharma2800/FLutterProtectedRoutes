@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class LandingPage extends StatefulWidget {
-  LandingPage({Key key}) : super(key: key);
+  final String page;
+  final String extra;
+
+  const LandingPage({Key key, this.page, this.extra}) : super(key: key);
 
   @override
   _LandingPageState createState() => _LandingPageState();

@@ -12,11 +12,23 @@ class Router {
 
   static Handler _mainHandler = Handler(
       handlerFunc: (BuildContext context, Map<String, dynamic> params) =>
-          LandingPage());
+          LandingPage(
+            page: params['name'][0],
+          ));
+  static Handler _mainHandler2 = Handler(
+      handlerFunc: (BuildContext context, Map<String, dynamic> params) =>
+          LandingPage(
+            page: params['name'][0],
+            extra: params['extra'][0],
+          ));
 
   static void setupRouter() {
     router.define("/", handler: _splashHandler);
+
     router.define("/main/:name",
         handler: _mainHandler, transitionType: TransitionType.fadeIn);
+
+    router.define("/main/:name/:extra",
+        handler: _mainHandler2, transitionType: TransitionType.fadeIn);
   }
 }
