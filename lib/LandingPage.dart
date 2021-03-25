@@ -10,9 +10,40 @@ class LandingPage extends StatefulWidget {
   _LandingPageState createState() => _LandingPageState();
 }
 
+List<String> pages = [
+  'home',
+  'about',
+  'profile',
+  'settings',
+  'help',
+];
+
+List<IconData> icons = [
+  Icons.home,
+  Icons.pages_rounded,
+  Icons.person_rounded,
+  Icons.settings_rounded,
+  Icons.help_rounded,
+];
+
 class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Container(
+        child: Row(
+          children: [
+            Container(
+              width: MediaQuery.of(context).size.width * 0.1,
+              color: Colors.white,
+            ),
+            Container(
+              width: MediaQuery.of(context).size.width * 0.9,
+              color: Colors.red,
+            )
+          ],
+        ),
+      ),
+    );
   }
 }

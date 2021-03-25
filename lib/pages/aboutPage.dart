@@ -11,7 +11,7 @@ class About extends StatelessWidget {
         color: Colors.green,
         child: Center(
           child: Text(
-            'About Page ... :D and here is the Parameter passed.... $name',
+            'About Page ... and here is the Parameter passed.... $name',
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30.0),
           ),
         ),

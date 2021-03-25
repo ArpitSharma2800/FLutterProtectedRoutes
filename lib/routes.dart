@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_routes/LandingPage.dart';
 import 'package:flutter_routes/splashScreen.dart';
 
-class Router {
+class FRouter {
   static final FluroRouter router = FluroRouter();
 
   static Handler _splashHandler = Handler(

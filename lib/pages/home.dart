@@ -8,7 +8,7 @@ class Home extends StatelessWidget {
         color: Colors.cyan,
         child: Center(
             child: Text(
-          'Home Page ... :D',
+          'Home Page ...',
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30.0),
         )),
       ),
