@@ -1,18 +1,23 @@
 import 'package:flutter/material.dart';
 
-class Splashscreen extends StatefulWidget {
-  Splashscreen({Key key}) : super(key: key);
-
+class SplashScreen extends StatefulWidget {
   @override
-  _SplashscreenState createState() => _SplashscreenState();
+  _SplashScreenState createState() => _SplashScreenState();
 }
 
-class _SplashscreenState extends State<Splashscreen> {
+class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     Future.delayed(Duration(milliseconds: 1000), () {
       Navigator.pushNamed(context, '/main/home');
     });
-    return Container();
+    return Scaffold(
+      body: Container(
+        child: Text(
+          'Splash Screen...',
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30.0),
+        ),
+      ),
+    );
   }
 }

@@ -8,7 +8,7 @@ class FRouter {
 
   static Handler _splashHandler = Handler(
       handlerFunc: (BuildContext context, Map<String, dynamic> params) =>
-          Splashscreen());
+          SplashScreen());
 
   static Handler _mainHandler = Handler(
       handlerFunc: (BuildContext context, Map<String, dynamic> params) =>
