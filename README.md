@@ -1,16 +1,19 @@
-# flutter_routes
+# Flutter Routes with fluro for web
 
-A new Flutter project.
+In the case of production, everyone need protected routes for production so that different screens can be rendered using different tokens and auth based renders.
+These kinds of protected routes in flutter can be achieved using fluro.
 
-## Getting Started
+[__Fluro__](https://pub.dev/packages/fluro) is a null-safe Flutter routing library that adds flexible routing options like wildcards, named parameters and clear route definitions.
 
-This project is a starting point for a Flutter application.
+## How to install : [_https://pub.dev/packages/fluro/install_](https://pub.dev/packages/fluro/install)
 
-A few resources to get you started if this is your first Flutter project:
+## Features 
+- Simple route navigation
+- Function handlers (map to a function instead of a route)
+- Wildcard parameter matching
+- Querystring parameter parsing
+- Common transitions built-in
+- Simple custom transition creation
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Thanks a lot 
+## Github Repo : [https://github.com/ArpitSharma2800/FLutterProtectedRoutes](https://github.com/ArpitSharma2800/FLutterProtectedRoutes)
