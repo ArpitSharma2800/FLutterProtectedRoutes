@@ -7,7 +7,7 @@ class Help extends StatelessWidget {
       color: Colors.deepPurple,
       child: Center(
           child: Text(
-        'Help Page ...',
+        'Helping ...',
         style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30.0),
       )),
     );

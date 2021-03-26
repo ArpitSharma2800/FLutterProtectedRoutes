@@ -14,7 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       body: Container(
         child: Text(
-          'Splash Screen...',
+          'Welcome Screen...',
           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30.0),
         ),
       ),
